@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tids>
+  <tid name="TID_UserLogin">
+    <sp>sp_userlogin</sp>
+    <in_items>
+      <in_item>ReqUserLoginField.DataFlowFlag</in_item>
+      <in_item>ReqUserLoginField.UserId</in_item>
+      <in_item>ReqUserLoginField.Password</in_item>
+    </in_items>
+    <out_items>
+      <out_item>ErrorField.ErrorCode</out_item>
+      <out_item>ErrorField.ErrorText</out_item>
+      <out_item>ErrorField.TimeStamp</out_item>
+    </out_items>
+    <result_items>
+      <result_item>RspUserLoginField.DataFlowFlag</result_item>
+      <result_item>RspUserLoginField.ParticipantId</result_item>
+    </result_items>
+  </tid>
+  <tid name="TID_UserLogout">
+    <sp>sp_userlogout</sp>
+    <in_items>
+      <in_item>ReqUserLogoutField.DataFlowFlag</in_item>
+      <in_item>ReqUserLogoutField.ParticipantId</in_item>
+      <in_item>ReqUserLogoutField.UserId</in_item>
+    </in_items>
+    <out_items>
+      <out_item>ErrorField.ErrorCode</out_item>
+      <out_item>ErrorField.ErrorText</out_item>
+      <out_item>ErrorField.TimeStamp</out_item>
+    </out_items>
+    <result_items>
+      <result_item>RspUserLogoutField.DataFlowFlag</result_item>
+      <result_item>RspUserLogoutField.ParticipantId</result_item>
+    </result_items>
+  </tid>
+</tids>
